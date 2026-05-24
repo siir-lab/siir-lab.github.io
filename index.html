@@ -75,14 +75,14 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo {
-      display: flex; align-items: center; gap: .75rem;
+      display: flex; align-items: center; gap: .8rem;
     }
-    .nav-logo-badge {
-      width: 44px; height: 44px; border-radius: 50%;
-      background: var(--navy);
-      display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-serif); font-weight: 900;
-      font-size: 1rem; color: var(--gold); letter-spacing: .05em;
+    .nav-logo-image {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
     }
     .nav-logo-text { line-height: 1.1; }
     .nav-logo-text strong {
@@ -411,9 +411,38 @@
       background: var(--navy); color: rgba(255,255,255,.7);
       padding: 3rem 2rem; text-align: center;
     }
-    .footer-logo {
-      font-family: var(--font-serif); font-size: 1.3rem;
-      color: var(--gold); font-weight: 700; margin-bottom: .5rem;
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .9rem;
+      margin-bottom: .75rem;
+    }
+    .footer-logo-image {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
+    }
+    .footer-logo-text {
+      text-align: left;
+      line-height: 1.1;
+    }
+    .footer-logo-text strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--white);
+      font-weight: 700;
+    }
+    .footer-logo-text span {
+      display: block;
+      font-size: .74rem;
+      color: rgba(255,255,255,.55);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-top: .2rem;
     }
     .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.2rem 0; }
     .footer-links a { font-size: .82rem; color: rgba(255,255,255,.5); transition: color .2s; }
@@ -451,6 +480,25 @@
       .hamburger { display: flex; }
       .impact-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.12); }
       .impact-item:last-child { border-bottom: none; }
+
+      .nav-logo-image {
+        width: 46px;
+        height: 46px;
+      }
+      .nav-logo-text strong {
+        font-size: .98rem;
+      }
+      .nav-logo-text span {
+        font-size: .66rem;
+        letter-spacing: .05em;
+      }
+      .footer-brand {
+        flex-direction: column;
+        gap: .75rem;
+      }
+      .footer-logo-text {
+        text-align: center;
+      }
     }
 
     /* Mobile nav list override */
@@ -467,7 +515,7 @@
 <nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo" aria-label="SIIR Lab Home">
-      <div class="nav-logo-badge">SIIR</div>
+      <img src="logo.png" alt="SIIR Lab logo" class="nav-logo-image" />
       <div class="nav-logo-text">
         <strong>SIIR Lab</strong>
         <span>Safety · Innovation · Integration</span>
@@ -559,9 +607,7 @@
 <section id="vision" class="section" aria-labelledby="vision-heading">
   <div class="container">
     <div class="vision-grid reveal">
-      <!-- Image column -->
       <div class="vision-img-wrap">
-        <!-- Replace src with a real lab/construction-site photo if available -->
         <img
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
           alt="SIIR Lab research environment"
@@ -569,7 +615,6 @@
         />
         <span class="vision-img-badge">Est. Texas A&amp;M University</span>
       </div>
-      <!-- Text column -->
       <div>
         <p class="section-tag">Our Mission</p>
         <h2 id="vision-heading" class="section-title">Transforming Workplace Safety Through Innovation</h2>
@@ -607,7 +652,6 @@
 
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="AI Safety Monitoring project" loading="lazy" />
@@ -630,7 +674,6 @@
         </div>
       </article>
 
-      <!-- Project 2 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Wearable Safety Sensors project" loading="lazy" />
@@ -653,7 +696,6 @@
         </div>
       </article>
 
-      <!-- Project 3 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="Safety Culture project" loading="lazy" />
@@ -676,7 +718,6 @@
         </div>
       </article>
 
-      <!-- Project 4 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="Digital Twin Safety project" loading="lazy" />
@@ -699,7 +740,6 @@
         </div>
       </article>
 
-      <!-- Project 5 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Fall Prevention project" loading="lazy" />
@@ -722,7 +762,6 @@
         </div>
       </article>
 
-      <!-- Project 6 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
           <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="VR Safety Training project" loading="lazy" />
@@ -745,7 +784,7 @@
         </div>
       </article>
 
-    </div><!-- /.projects-grid -->
+    </div>
   </div>
 </section>
 
@@ -777,7 +816,6 @@
           <span class="badge badge-teal">NSF-Funded</span>
         </div>
 
-        <!-- NSF Logo block -->
         <div class="nsf-logo-block">
           <div class="nsf-emblem">
             <span>NSF</span>
@@ -813,7 +851,6 @@
     <h2 id="people-heading" class="section-title reveal">People</h2>
     <div class="divider reveal"></div>
 
-    <!-- Director -->
     <div class="people-director reveal">
       <img
         src="main.png"
@@ -845,121 +882,58 @@
       </div>
     </div>
 
-    <!-- Lab Members -->
     <h3 class="section-title reveal" style="font-size:1.5rem; margin-bottom:1.5rem;">Graduate &amp; Undergraduate Researchers</h3>
     <div class="members-grid">
-
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">AS</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Aisha Suleiman</div>
-          <div class="member-role">PhD Candidate</div>
-          <div class="member-interest">Computer vision · PPE detection</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">AS</div></div>
+        <div class="member-body"><div class="member-name">Aisha Suleiman</div><div class="member-role">PhD Candidate</div><div class="member-interest">Computer vision · PPE detection</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">MO</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Marcus Okonkwo</div>
-          <div class="member-role">PhD Student</div>
-          <div class="member-interest">Wearable sensors · fatigue modeling</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">MO</div></div>
+        <div class="member-body"><div class="member-name">Marcus Okonkwo</div><div class="member-role">PhD Student</div><div class="member-interest">Wearable sensors · fatigue modeling</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">LR</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Laura Reyes</div>
-          <div class="member-role">PhD Student</div>
-          <div class="member-interest">Safety climate · workforce diversity</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">LR</div></div>
+        <div class="member-body"><div class="member-name">Laura Reyes</div><div class="member-role">PhD Student</div><div class="member-interest">Safety climate · workforce diversity</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">JK</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">James Kim</div>
-          <div class="member-role">MS Student</div>
-          <div class="member-interest">Digital twins · BIM integration</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">JK</div></div>
+        <div class="member-body"><div class="member-name">James Kim</div><div class="member-role">MS Student</div><div class="member-interest">Digital twins · BIM integration</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">FN</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Fatima Nwosu</div>
-          <div class="member-role">MS Student</div>
-          <div class="member-interest">Predictive risk analytics · ML</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">FN</div></div>
+        <div class="member-body"><div class="member-name">Fatima Nwosu</div><div class="member-role">MS Student</div><div class="member-interest">Predictive risk analytics · ML</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">DM</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Diego Morales</div>
-          <div class="member-role">MS Student</div>
-          <div class="member-interest">VR training · hazard recognition</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">DM</div></div>
+        <div class="member-body"><div class="member-name">Diego Morales</div><div class="member-role">MS Student</div><div class="member-interest">VR training · hazard recognition</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">PA</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Priya Anand</div>
-          <div class="member-role">Undergraduate Research Assistant</div>
-          <div class="member-interest">Human factors · ergonomics</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">PA</div></div>
+        <div class="member-body"><div class="member-name">Priya Anand</div><div class="member-role">Undergraduate Research Assistant</div><div class="member-interest">Human factors · ergonomics</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">TL</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Tyler Langford</div>
-          <div class="member-role">Undergraduate Research Assistant</div>
-          <div class="member-interest">IoT sensing · data pipelines</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">TL</div></div>
+        <div class="member-body"><div class="member-name">Tyler Langford</div><div class="member-role">Undergraduate Research Assistant</div><div class="member-interest">IoT sensing · data pipelines</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">ZA</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Zara Ahmed</div>
-          <div class="member-role">Visiting Scholar</div>
-          <div class="member-interest">Occupational health · epidemiology</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">ZA</div></div>
+        <div class="member-body"><div class="member-name">Zara Ahmed</div><div class="member-role">Visiting Scholar</div><div class="member-interest">Occupational health · epidemiology</div></div>
       </div>
 
       <div class="member-card reveal">
-        <div class="member-img-wrap">
-          <div class="member-avatar-placeholder">OB</div>
-        </div>
-        <div class="member-body">
-          <div class="member-name">Olumide Babalola</div>
-          <div class="member-role">PhD Student</div>
-          <div class="member-interest">Safety legislation · policy analysis</div>
-        </div>
+        <div class="member-img-wrap"><div class="member-avatar-placeholder">OB</div></div>
+        <div class="member-body"><div class="member-name">Olumide Babalola</div><div class="member-role">PhD Student</div><div class="member-interest">Safety legislation · policy analysis</div></div>
       </div>
-
-    </div><!-- /.members-grid -->
+    </div>
   </div>
 </section>
 
@@ -973,7 +947,6 @@
     <div class="divider reveal"></div>
 
     <div class="news-list">
-
       <article class="news-item reveal">
         <div class="news-date">
           <div class="news-date-month">Apr</div>
@@ -1038,7 +1011,6 @@
           <p class="news-excerpt">Four new PhD students have joined the SIIR Lab, bringing expertise in machine learning, human factors, sensor systems, and construction management to the team.</p>
         </div>
       </article>
-
     </div>
   </div>
 </section>
@@ -1125,10 +1097,18 @@
      FOOTER
 ═══════════════════════════════════════ -->
 <footer role="contentinfo">
-  <div class="footer-logo">SIIR Lab</div>
+  <div class="footer-brand">
+    <img src="logo.png" alt="SIIR Lab logo" class="footer-logo-image" />
+    <div class="footer-logo-text">
+      <strong>SIIR Lab</strong>
+      <span>Safety · Innovation · Integration</span>
+    </div>
+  </div>
+
   <p style="font-size:.82rem; color:rgba(255,255,255,.45); max-width:500px; margin:.5rem auto 0;">
     Safety Innovation Integration Research Laboratory · Texas A&amp;M University
   </p>
+
   <nav class="footer-links" aria-label="Footer navigation">
     <a href="#vision">Vision</a>
     <a href="#projects">Research</a>
@@ -1138,6 +1118,7 @@
     <a href="#contact">Contact</a>
     <a href="https://www.siir-lab.com/" target="_blank" rel="noopener">siir-lab.com</a>
   </nav>
+
   <p class="footer-copy">© <span id="yr"></span> SIIR Lab – Texas A&amp;M University. All rights reserved.</p>
 </footer>
 
@@ -1145,16 +1126,13 @@
      SCRIPTS
 ═══════════════════════════════════════ -->
 <script>
-  /* ── Year ── */
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* ── Navbar scroll shadow ── */
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 30);
   }, { passive: true });
 
-  /* ── Active nav link on scroll ── */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   const observer = new IntersectionObserver(entries => {
@@ -1168,7 +1146,6 @@
   }, { threshold: .35 });
   sections.forEach(s => observer.observe(s));
 
-  /* ── Hamburger ── */
   const hamburger = document.getElementById('hamburger');
   const navList   = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => {
@@ -1182,7 +1159,6 @@
     });
   });
 
-  /* ── Scroll reveal ── */
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -1193,7 +1169,6 @@
   }, { threshold: .1, rootMargin: '0px 0px -50px 0px' });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  /* ── Contact form (static / mailto fallback) ── */
   function handleSubmit(e) {
     e.preventDefault();
     const name    = document.getElementById('cf-name').value.trim();
@@ -1201,7 +1176,6 @@
     const subject = document.getElementById('cf-subject').value;
     const msg     = document.getElementById('cf-msg').value.trim();
     if (!name || !email || !msg) return;
-    // Encode as mailto for GitHub Pages (no server)
     const mailto = `mailto:nnaji@tamu.edu?subject=${encodeURIComponent(subject || 'SIIR Lab Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`)}`;
     window.location.href = mailto;
     document.getElementById('form-status').style.display = 'block';
