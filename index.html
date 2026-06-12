@@ -3,15 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SIIR Lab – Safety Innovation Integration Research Lab | Dr. Nnaji</title>
-  <meta name="description" content="The Safety Innovation Integration Research Laboratory (SIIR Lab), led by Dr. Nnaji, advances research at the intersection of safety, innovation, and systems integration." />
-  <meta name="keywords" content="SIIR Lab, SIIR, Safety Innovation Integration Research Lab, Dr. Nnaji, siir-lab, siir lab texas, construction safety research" />
-  <meta name="author" content="SIIR Lab – Dr. Nnaji" />
-  <meta property="og:title" content="SIIR Lab – Safety Innovation Integration Research Lab" />
-  <meta property="og:description" content="Advancing research in safety, innovation, and systems integration – SIIR Lab led by Dr. Nnaji." />
+
+  <!-- ═══════════════════════════════════════
+       SEO: Title & Meta
+  ═══════════════════════════════════════ -->
+  <title>Dr. Chukwuma Nnaji | SIIR Lab – Safety Innovation Integration Research Lab | Texas A&M</title>
+  <meta name="description" content="SIIR Lab – Safety Innovation Integration Research Lab at Texas A&M University, led by Dr. Chukwuma Nnaji. Research in construction safety, AI hazard detection, wearable technology, and human factors." />
+  <meta name="keywords" content="SIIR Lab, SIIR, Safety Innovation Integration Research Lab, Dr. Nnaji, Dr. Chukwuma Nnaji, Chukwuma Nnaji, Chuma Nnaji, siir-lab, siir lab texas, construction safety research, Texas A&M construction safety, occupational safety research" />
+  <meta name="author" content="Dr. Chukwuma Nnaji – SIIR Lab, Texas A&M University" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dr. Chukwuma Nnaji | SIIR Lab – Safety Innovation Integration Research Lab" />
+  <meta property="og:description" content="SIIR Lab at Texas A&M University, led by Dr. Chukwuma Nnaji. Advancing construction safety through AI, wearables, and human factors research." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sharjeelanjum.github.io/" />
-  <link rel="canonical" href="https://sharjeelanjum.github.io/" />
+  <meta property="og:url" content="https://siir-lab.github.io/" />
+
+  <link rel="canonical" href="https://siir-lab.github.io/" />
+
+  <!-- ═══════════════════════════════════════
+       SEO: JSON-LD Structured Data
+  ═══════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "SIIR Lab",
+    "alternateName": "Safety Innovation Integration Research Lab",
+    "url": "https://siir-lab.github.io/",
+    "description": "The Safety Innovation Integration Research Laboratory (SIIR Lab) at Texas A&M University, led by Dr. Chukwuma Nnaji, advancing research in construction safety, wearable technology, AI-enabled hazard detection, and human factors.",
+    "founder": {
+      "@type": "Person",
+      "name": "Chukwuma Nnaji",
+      "alternateName": ["Dr. Nnaji", "Dr. Chukwuma Nnaji", "Chuma Nnaji"],
+      "jobTitle": "Associate Professor",
+      "email": "nnaji@tamu.edu",
+      "url": "https://siir-lab.github.io/",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Texas A&M University",
+        "department": "Department of Construction Science"
+      }
+    },
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Texas A&M University"
+    },
+    "sameAs": [
+      "https://siir-lab.github.io/"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -121,142 +164,28 @@
     .project-link:hover { border-color: var(--teal); }
 
     /* ── REU SLIDER ── */
-    .reu-slider {
-      position: relative;
-      background: var(--white);
-      border-radius: var(--r);
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-      overflow: hidden;
-      margin-top: 1rem;
-    }
+    .reu-slider { position: relative; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem; }
     .reu-slide { display: none; }
     .reu-slide.active { display: block; }
-    .reu-slide-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 420px;
-    }
-    .reu-slide-img {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #0a2342, #0d3460);
-      min-height: 340px;
-    }
-    .reu-slide-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-      display: block;
-    }
-    .reu-slide-img.img-fallback {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .reu-slide-img.img-fallback::after {
-      content: '📸';
-      font-size: 4rem;
-      opacity: .3;
-    }
-    .reu-slide-badge {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      background: var(--gold);
-      color: var(--navy);
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      padding: .3rem .9rem;
-      border-radius: 100px;
-    }
-    .reu-slide-content {
-      padding: 2.5rem 2.5rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .reu-year-tag {
-      font-size: .72rem;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--teal);
-      margin-bottom: .6rem;
-    }
-    .reu-slide-title {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      color: var(--navy);
-      margin-bottom: 1rem;
-      line-height: 1.25;
-    }
-    .reu-slide-text {
-      font-size: .92rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: .75rem;
-    }
-    .reu-badge-row {
-      display: flex;
-      gap: .6rem;
-      flex-wrap: wrap;
-      margin-top: 1.25rem;
-    }
-    .reu-pair-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: .85rem;
-      margin-top: .75rem;
-    }
-    .reu-pair-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: .75rem;
-      font-size: .92rem;
-      color: var(--text);
-    }
-    .reu-pair-icon {
-      font-size: 1.4rem;
-      line-height: 1;
-      flex-shrink: 0;
-    }
-    /* Slider Controls */
-    .reu-controls {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1.25rem;
-      background: var(--cream);
-      border-top: 1px solid var(--border);
-    }
-    .reu-btn {
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      border: 2px solid var(--navy);
-      background: transparent;
-      color: var(--navy);
-      font-size: 1rem;
-      cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-      transition: background .2s, color .2s;
-    }
+    .reu-slide-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
+    .reu-slide-img { position: relative; overflow: hidden; background: linear-gradient(135deg, #0a2342, #0d3460); min-height: 340px; }
+    .reu-slide-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .reu-slide-img.img-fallback { display: flex; align-items: center; justify-content: center; }
+    .reu-slide-img.img-fallback::after { content: '📸'; font-size: 4rem; opacity: .3; }
+    .reu-slide-badge { position: absolute; top: 1rem; left: 1rem; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 100px; }
+    .reu-slide-content { padding: 2.5rem 2.5rem 2rem; display: flex; flex-direction: column; justify-content: center; }
+    .reu-year-tag { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--teal); margin-bottom: .6rem; }
+    .reu-slide-title { font-family: var(--font-serif); font-size: 1.5rem; color: var(--navy); margin-bottom: 1rem; line-height: 1.25; }
+    .reu-slide-text { font-size: .92rem; color: var(--muted); line-height: 1.7; margin-bottom: .75rem; }
+    .reu-badge-row { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.25rem; }
+    .reu-pair-list { list-style: none; display: flex; flex-direction: column; gap: .85rem; margin-top: .75rem; }
+    .reu-pair-list li { display: flex; align-items: flex-start; gap: .75rem; font-size: .92rem; color: var(--text); }
+    .reu-pair-icon { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
+    .reu-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1.25rem; background: var(--cream); border-top: 1px solid var(--border); }
+    .reu-btn { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; color: var(--navy); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s; }
     .reu-btn:hover { background: var(--navy); color: var(--white); }
     .reu-dots { display: flex; gap: .5rem; }
-    .reu-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      border: 2px solid var(--navy);
-      background: transparent;
-      cursor: pointer;
-      transition: background .2s;
-      padding: 0;
-    }
+    .reu-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; cursor: pointer; transition: background .2s; padding: 0; }
     .reu-dot.active { background: var(--navy); }
 
     /* BADGES */
@@ -386,7 +315,7 @@
   <div class="hero-inner">
     <span class="hero-kicker">Safety Innovation Integration Research Lab</span>
     <h1 class="hero-title">Advancing <em>Safety</em><br />Through Research &amp; Innovation</h1>
-    <p class="hero-sub">The SIIR Lab, led by Dr. Nnaji, investigates cutting-edge strategies at the intersection of occupational safety, emerging technologies, and systems integration to build safer work environments.</p>
+    <p class="hero-sub">The SIIR Lab, led by Dr. Chukwuma Nnaji at Texas A&amp;M University, investigates cutting-edge strategies at the intersection of occupational safety, emerging technologies, and systems integration to build safer work environments.</p>
     <div class="hero-ctas">
       <a href="#vision" class="btn btn-primary">Explore Our Vision</a>
       <a href="#projects" class="btn btn-outline">View Projects</a>
@@ -416,14 +345,14 @@
   <div class="container">
     <div class="vision-grid reveal">
       <div class="vision-img-wrap">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="SIIR Lab research environment" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="SIIR Lab research environment at Texas A&M University" loading="lazy" />
         <span class="vision-img-badge">Est. Texas A&amp;M University</span>
       </div>
       <div>
         <p class="section-tag">Our Mission</p>
         <h2 id="vision-heading" class="section-title">Transforming Workplace Safety Through Innovation</h2>
         <div class="divider"></div>
-        <p style="color:var(--muted); font-size:.95rem; margin-bottom:1rem;">The Safety Innovation Integration Research (SIIR) Lab is committed to advancing the science and practice of occupational health and safety. We develop and deploy evidence-based interventions, digital tools, and data-driven frameworks that protect workers across construction, energy, and infrastructure sectors.</p>
+        <p style="color:var(--muted); font-size:.95rem; margin-bottom:1rem;">The Safety Innovation Integration Research (SIIR) Lab, led by Dr. Chukwuma Nnaji, is committed to advancing the science and practice of occupational health and safety. We develop and deploy evidence-based interventions, digital tools, and data-driven frameworks that protect workers across construction, energy, and infrastructure sectors.</p>
         <ul class="vision-points">
           <li>Integrating AI, wearable sensors, and computer vision to proactively detect and mitigate hazards.</li>
           <li>Building inclusive safety frameworks that account for diverse worker populations and contexts.</li>
@@ -520,9 +449,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     REU PROGRAM
-═══════════════════════════════════════ -->
+<!-- REU PROGRAM -->
 <section id="luminy" class="section" aria-labelledby="reu-heading">
   <div class="container">
     <p class="section-tag reveal">Undergraduate Research</p>
@@ -536,7 +463,6 @@
     </p>
 
     <div class="reu-slider reveal" id="reuSlider">
-
       <!-- Slide 0: 2025 -->
       <div class="reu-slide active" data-index="0">
         <div class="reu-slide-inner">
@@ -571,7 +497,7 @@
       <div class="reu-slide" data-index="1">
         <div class="reu-slide-inner">
           <div class="reu-slide-img">
-            <img src="kyra.png" alt="Kyra Martindale, an REU student in 2024, presented her conference paper at CSCE 2025 in Canada and also gave a poster presentation at Texas A&M University (TAMU)." loading="lazy"
+            <img src="kyra.png" alt="Kyra Martindale REU student 2024 CSCE Conference Canada Texas A&M" loading="lazy"
               onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback');" />
             <div class="reu-slide-badge">2024 Cohort</div>
           </div>
@@ -665,7 +591,7 @@
 
   <div class="member-card reveal"><div class="member-img-wrap"><img src="Nayeem.jfif" alt="Md Nayeem Hoque" class="member-img"></div><div class="member-body"><div class="member-name">Md Nayeem Hoque</div><div class="member-role">MS Student</div><div class="member-interest">Work Zone Safety, Crash Analysis, and Decision Support Systems</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=md-nayeem-hoque" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Nayeem-Hoque" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/md-nayeem-hoque" target="_blank">LinkedIn</a></div></div></div>
 
-  <div class="member-card reveal"><div class="member-img-wrap"><img src="samuel.jfif" alt="Samuel Olatunbosun" class="member-img"></div><div class="member-body"><div class="member-name">Samuel Olatunbosun</div><div class="member-role">PhD Student</div><div class="member-interest">Safety in Human-robot Collaboration in Construction</div><div class="member-links"><a href="https://scholar.google.com/citations?user=AY8lm_MAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Samuel-Olatunbosun-4?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/samuel5070" target="_blank">LinkedIn</a></div></div></div>
+  <div class="member-card reveal"><div class="member-img-wrap"><img src="sam.jpeg" alt="Samuel Olatunbosun" class="member-img"></div><div class="member-body"><div class="member-name">Samuel Olatunbosun</div><div class="member-role">PhD Student</div><div class="member-interest">Safety in Human-robot Collaboration in Construction</div><div class="member-links"><a href="https://scholar.google.com/citations?user=AY8lm_MAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Samuel-Olatunbosun-4?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/samuel5070" target="_blank">LinkedIn</a></div></div></div>
 
 <div class="member-card reveal"><div class="member-img-wrap"><img src="Muhammad.png" alt="Muhammad Khan" class="member-img"></div><div class="member-body"><div class="member-name">Muhammad Khan</div><div class="member-role">PhD Student</div><div class="member-interest">Research focuses on Exoskeletons & wearable robotics, Exoskeleton & Wearable Robotics, Human–Robot Interaction & Biomechanics, Fatigue & Heat Stress Monitoring, AI-Driven Safety Analytics & Digital Twins, Immersive Technologies & Worker Training, Highway Infrastructure & Work Zone Safety, Extraterrestrial Construction Safety </div><div class="member-links"><a href="https://scholar.google.com/citations?user=mn9GGigAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Muhammad-Khan-811" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/muhammad-khan-525862126/" target="_blank">LinkedIn</a></div></div></div>
 
@@ -701,7 +627,7 @@
       </article>
       <article class="news-item reveal">
         <div class="news-date"><div class="news-date-month">Nov</div><div class="news-date-day">10</div><div class="news-date-year">2024</div></div>
-        <div><div class="news-tag">Award</div><h3 class="news-title">Dr. Nnaji Honored with College Excellence in Research Award</h3><p class="news-excerpt">Dr. Nnaji received the College of Engineering's annual Excellence in Research award, recognizing outstanding contributions to occupational safety science.</p></div>
+        <div><div class="news-tag">Award</div><h3 class="news-title">Dr. Nnaji Honored with College Excellence in Research Award</h3><p class="news-excerpt">Dr. Chukwuma Nnaji received the College of Engineering's annual Excellence in Research award, recognizing outstanding contributions to occupational safety science.</p></div>
       </article>
       <article class="news-item reveal">
         <div class="news-date"><div class="news-date-month">Sep</div><div class="news-date-day">03</div><div class="news-date-year">2024</div></div>
@@ -722,8 +648,8 @@
         <p>We welcome inquiries from prospective graduate students, industry partners, and fellow researchers. Please reach out to learn more about our ongoing projects, collaboration opportunities, or the REU program.</p>
         <div class="contact-details">
           <div class="contact-row"><div class="contact-icon">📍</div><div class="contact-val"><strong>SIIR Lab – Texas A&amp;M University</strong><small>College Station, TX 77843</small></div></div>
-          <div class="contact-row"><div class="contact-icon">✉</div><div class="contact-val"><a href="mailto:nnaji@tamu.edu">nnaji@tamu.edu</a><small>Lab Director</small></div></div>
-          <div class="contact-row"><div class="contact-icon">🌐</div><div class="contact-val"><a https://siir-lab.github.io/" target="_blank" rel="noopener">www.siir-lab.io</a><small>Official lab website</small></div></div>
+          <div class="contact-row"><div class="contact-icon">✉</div><div class="contact-val"><a href="mailto:nnaji@tamu.edu">nnaji@tamu.edu</a><small>Lab Director – Dr. Chukwuma Nnaji</small></div></div>
+          <div class="contact-row"><div class="contact-icon">🌐</div><div class="contact-val"><a href="https://siir-lab.github.io/" target="_blank" rel="noopener">siir-lab.github.io</a><small>Official lab website</small></div></div>
         </div>
       </div>
       <div>
@@ -757,9 +683,8 @@
 <footer role="contentinfo">
   <div class="footer-brand">
     <img src="logofoot.png" alt="SIIR Lab logo" class="footer-logo-image" />
-    
   </div>
-  <p style="font-size:.82rem; color:rgba(255,255,255,.45); max-width:500px; margin:.5rem auto 0;">Texas A&amp;M University</p>
+  <p style="font-size:.82rem; color:rgba(255,255,255,.45); max-width:500px; margin:.5rem auto 0;">Texas A&amp;M University · Department of Construction Science · Dr. Chukwuma Nnaji</p>
   <nav class="footer-links" aria-label="Footer navigation">
     <a href="#vision">Vision</a>
     <a href="#projects">Research</a>
@@ -767,19 +692,17 @@
     <a href="#people">People</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
-    <a href="https://siir-lab.github.io/" target="_blank" rel="noopener">siir-lab.com</a>
+    <a href="https://siir-lab.github.io/" target="_blank" rel="noopener">siir-lab.github.io</a>
   </nav>
-  <p class="footer-copy">© <span id="yr"></span> SIIR Lab – Texas A&amp;M University. All rights reserved.</p>
+  <p class="footer-copy">© <span id="yr"></span> SIIR Lab – Dr. Chukwuma Nnaji · Texas A&amp;M University. All rights reserved.</p>
 </footer>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // Navbar scroll
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 30); }, { passive: true });
 
-  // Active nav links
   const sections = document.querySelectorAll('section[id]');
   const navLinksAll = document.querySelectorAll('.nav-links a');
   const sectionObserver = new IntersectionObserver(entries => {
@@ -793,7 +716,6 @@
   }, { threshold: .35 });
   sections.forEach(s => sectionObserver.observe(s));
 
-  // Hamburger
   const hamburger = document.getElementById('hamburger');
   const navList   = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => {
@@ -804,18 +726,15 @@
     a.addEventListener('click', () => { navList.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); });
   });
 
-  // Reveal on scroll
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
   }, { threshold: .1, rootMargin: '0px 0px -50px 0px' });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  // REU Slider
   (function() {
     const slides = document.querySelectorAll('.reu-slide');
     const dots   = document.querySelectorAll('.reu-dot');
     let current  = 0;
-
     function goTo(idx) {
       slides[current].classList.remove('active');
       dots[current].classList.remove('active');
@@ -823,13 +742,11 @@
       slides[current].classList.add('active');
       dots[current].classList.add('active');
     }
-
     document.getElementById('reuPrev').addEventListener('click', () => goTo(current - 1));
     document.getElementById('reuNext').addEventListener('click', () => goTo(current + 1));
     dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.dot)));
   })();
 
-  // Contact form
   function handleSubmit(e) {
     e.preventDefault();
     const name    = document.getElementById('cf-name').value.trim();
