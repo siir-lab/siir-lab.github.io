@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://siir-lab.github.io/sitemap.xml
