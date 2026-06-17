@@ -162,7 +162,46 @@
     .project-desc { font-size: .88rem; color: var(--muted); flex: 1; line-height: 1.65; }
     .project-link { display: inline-block; margin-top: 1.2rem; font-size: .82rem; font-weight: 600; color: var(--teal); border-bottom: 1px solid transparent; transition: border-color .2s; }
     .project-link:hover { border-color: var(--teal); }
+    .project-meta {
+  display: grid;
+  gap: .45rem;
+  margin-bottom: .9rem;
+  padding: .8rem .9rem;
+  background: rgba(14,107,168,.06);
+  border: 1px solid rgba(10,35,66,.08);
+  border-radius: 6px;
+}
 
+.project-meta div {
+  font-size: .8rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.project-meta strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.project-section-head {
+  margin: 0 0 2rem;
+}
+
+.project-section-head h3 {
+  font-family: var(--font-serif);
+  color: var(--navy);
+  font-size: 1.8rem;
+  margin-bottom: .55rem;
+}
+
+.project-section-head p {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.projects-grid + .project-section-head {
+  margin-top: 4rem;
+}
     /* ── REU SLIDER ── */
     .reu-slider { position: relative; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem; }
     .reu-slide { display: none; }
@@ -374,324 +413,538 @@
     <h2 id="projects-heading" class="section-title reveal">Projects</h2>
     <div class="divider reveal"></div>
     <p class="section-sub reveal">
-      Our research portfolio spans work zone safety, wearable robotics, immersive learning,
-      construction education, workforce analytics, and technology-enabled risk mitigation.
+      Our research portfolio spans work zone safety, construction safety, wearable robotics, immersive learning,
+      workforce development, and technology-enabled risk mitigation across the built environment.
     </p>
 
-    <div class="reveal" style="margin-bottom:2rem;">
-      <h3 style="font-family:var(--font-serif); color:var(--navy); font-size:1.8rem; margin-bottom:.75rem;">Current Projects</h3>
-      <p style="color:var(--muted); font-size:.95rem;">Ongoing sponsored research and active collaborative projects.</p>
-    </div>
-
-    <div class="projects-grid" style="margin-bottom:4rem;">
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="TANDEM project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NSF | Co-PI / Texas A&amp;M PI</div>
-          <h3 class="project-title">TANDEM: Tensegrity-based Assistive AND Rehabilitation Exosuits to Complement Human BioMechanics</h3>
-          <p class="project-desc">A multi-institutional NSF-funded project developing tensegrity-based wearable exosuits that support human movement during physically demanding tasks. Texas A&amp;M’s role emphasizes construction safety, worker-centered evaluation, and practical adoption of wearable assistive technologies in labor-intensive environments.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Innovative intersections safety project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">TxDOT | Co-PI</div>
-          <h3 class="project-title">Develop Guidance for Enhancing Work Zone Safety in the Construction of Innovative Intersections</h3>
-          <p class="project-desc">This project develops practical guidance for improving work zone safety during the construction of innovative intersections, including diverging diamond interchanges, median U-turns, and restricted crossing intersections. The research focuses on construction-stage safety risks, temporary traffic control strategies, and protecting both roadway users and workers.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="Cultural competency platform project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">CIAC | Co-PI</div>
-          <h3 class="project-title">Developing an AI-Driven Immersive Platform to Advance Cultural Competency in Construction Education</h3>
-          <p class="project-desc">This project develops an AI-driven immersive learning platform to strengthen cultural competency in construction education. The platform uses artificial intelligence and immersive technologies to create interactive training scenarios that improve communication, teamwork, and cultural awareness in diverse construction environments.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="Highway work area safety toolkit project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">FHWA | PI</div>
-          <h3 class="project-title">Decision Support Toolkit for Highway Work Area Safety</h3>
-          <p class="project-desc">This project develops a decision support toolkit to improve safety in highway work areas. The toolkit helps transportation agencies and construction teams evaluate work zone risks, identify appropriate safety strategies, and support data-informed decisions during planning and field operations.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Human wearable robot interactions project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NSF | Texas A&amp;M PI</div>
-          <h3 class="project-title">Collaborative Research: An Embodied Learning Environment for Advancing Human-Wearable Robot Interactions Skills in Construction Education</h3>
-          <p class="project-desc">This NSF-funded collaborative project develops an immersive learning environment to prepare construction students to effectively interact with and implement wearable robot technologies. It uses virtual reality and embodied learning to improve understanding of ergonomic risk reduction, muscle fatigue prevention, and safe technology adoption.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="ARTBA team work zone safety training program" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">FHWA | PI</div>
-          <h3 class="project-title">ARTBA Team Work Zone Safety Training Grant Program</h3>
-          <p class="project-desc">This project supports the development and delivery of work zone safety training through the ARTBA Team Work Zone Safety Training Grant Program. The effort advances training resources, practical guidance, and outreach for transportation construction professionals to improve roadway worker safety.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="Driving behaviors in work zones project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NCHRP | PI</div>
-          <h3 class="project-title">Reducing Adverse Driving Behaviors in Work Zones: Strategies and Guidelines</h3>
-          <p class="project-desc">This project develops strategies and guidelines to reduce unsafe driving behaviors in highway work zones, including speeding, tailgating, distracted driving, aggressive driving, and driver confusion. It focuses on identifying effective engineering, education, enforcement, and technology-based countermeasures.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Work zone intrusion prediction and prevention project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NCHRP | Co-PI</div>
-          <h3 class="project-title">Guide for Work Zone Intrusion Prediction and Prevention</h3>
-          <p class="project-desc">This project develops guidance to help transportation agencies predict and prevent vehicle intrusions into highway work zones. The research examines intrusion frequency, contributing factors, crash characteristics, and effective prevention and mitigation strategies for safer work zone planning.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="REU smart and sustainable construction project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NSF | Senior Personnel</div>
-          <h3 class="project-title">REU Site: Smart and Sustainable Construction in the Digital Era</h3>
-          <p class="project-desc">This NSF REU Site provides undergraduate students with hands-on summer research experience in smart and sustainable construction. Students work on emerging digital construction topics such as virtual reality, robotics, drones, digital twins, smart materials, machine learning, and artificial intelligence.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="Data sensing and computational thinking project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NSF | PI</div>
-          <h3 class="project-title">Collaborative Research: Embodied Interactive Environment for Advancing Data Sensing and Computational Thinking Skills in the Built Environment</h3>
-          <p class="project-desc">This NSF-funded project develops an embodied interactive learning environment to strengthen data sensing and computational thinking skills in the built environment. It uses immersive virtual construction scenarios to help students understand sensing technologies and apply data-informed decision-making to construction challenges.</p>
-        </div>
-      </article>
-    </div>
-
-    <div class="reveal" style="margin-bottom:2rem;">
-      <h3 style="font-family:var(--font-serif); color:var(--navy); font-size:1.8rem; margin-bottom:.75rem;">Completed Projects</h3>
-      <p style="color:var(--muted); font-size:.95rem;">Completed research, safety training, education, and technology adoption projects.</p>
+    <div class="project-section-head reveal">
+      <h3>Current Projects</h3>
+      <p>Ongoing sponsored research, active collaborative studies, and workforce development initiatives.</p>
     </div>
 
     <div class="projects-grid">
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Roadway worker safety training project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="TANDEM project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Department of Labor | PI</div>
-          <h3 class="project-title">Roadway Worker Safety Training</h3>
-          <p class="project-desc">This project developed and delivered roadway worker safety training to improve hazard recognition and injury prevention in roadway construction and maintenance environments. It focused on common work zone hazards, safe work practices, and practical strategies to reduce incidents involving moving traffic, equipment, and jobsite operations.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="Zero Accident Techniques project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">CII | Co-PI</div>
-          <h3 class="project-title">A Refresh of CII’s Zero Accident Techniques (ZAT)</h3>
-          <p class="project-desc">This project updated the Construction Industry Institute’s Zero Accident Techniques to reflect current safety practices, industry needs, and emerging approaches to injury prevention. It focused on identifying effective safety practices and developing updated guidance for construction companies.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="Forecasting absenteeism project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">ELECTRI | Co-PI</div>
-          <h3 class="project-title">Forecasting Absenteeism in the Electrical Construction Industry Through Predictive Data Analytics</h3>
-          <p class="project-desc">This project used predictive data analytics to forecast absenteeism trends in the electrical construction industry. It analyzed historical workforce and project data to identify contributing factors and support proactive employee engagement, workforce planning, and productivity improvement.</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Completed TANDEM project" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-tag">NSF | Co-PI</div>
+          <div class="project-tag">Wearable Robotics</div>
           <h3 class="project-title">TANDEM: Tensegrity-based Assistive AND Rehabilitation Exosuits to Complement Human BioMechanics</h3>
-          <p class="project-desc">This project supported the development of bio-inspired tensegrity-based exosuits designed to complement human biomechanics during physically demanding tasks. It focused on wearable assistive technologies that reduce muscular effort, improve comfort, and lower the risk of work-related musculoskeletal injuries.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Science Foundation through subcontract from The University of Alabama</div>
+            <div><strong>Project Period:</strong> 2025–2028</div>
+            <div><strong>Funding:</strong> $5,000,000 total project funding; $880,000 Texas A&amp;M subaward</div>
+            <div><strong>Role:</strong> Co-PI / Texas A&amp;M PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Science Foundation, this multi-institutional project develops tensegrity-based wearable exosuits that support human movement during physically demanding tasks. The work includes a bio-inspired “Second Spine” exosuit designed to reduce physical strain, improve comfort, and lower the risk of musculoskeletal injuries, while Texas A&amp;M focuses on construction safety, worker-centered evaluation, and practical field adoption.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="On-site autonomous equipment safety project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Innovative intersections work zone safety project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Department of Labor | PI</div>
+          <div class="project-tag">Work Zone Safety</div>
+          <h3 class="project-title">Develop Guidance for Enhancing Work Zone Safety in the Construction of Innovative Intersections</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Texas Department of Transportation</div>
+            <div><strong>Project Period:</strong> January 2026–December 2027</div>
+            <div><strong>Funding:</strong> $415,000 requested funding</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Texas Department of Transportation, this project develops practical guidance for improving work zone safety during the construction of innovative intersections, including diverging diamond interchanges, median U-turns, and restricted crossing intersections. The research focuses on construction-stage risks, temporary traffic control strategies, and protecting both roadway users and workers.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="Cultural competency immersive platform project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">AI &amp; Immersive Learning</div>
+          <h3 class="project-title">Developing an AI-Driven Immersive Platform to Advance Cultural Competency in Construction Education</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Construction Industry Advisory Council (CIAC)</div>
+            <div><strong>Project Period:</strong> January 2025–December 2025</div>
+            <div><strong>Funding:</strong> $30,000</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Construction Industry Advisory Council, this project develops an AI-driven immersive platform to strengthen cultural competency in construction education. The platform uses artificial intelligence and immersive technologies to create interactive training scenarios that improve communication, teamwork, and cultural awareness across diverse construction settings.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="Decision support toolkit highway work area safety project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Decision Support</div>
+          <h3 class="project-title">Decision Support Toolkit for Highway Work Area Safety</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Federal Highway Administration</div>
+            <div><strong>Project Period:</strong> October 2024–December 2026</div>
+            <div><strong>Funding:</strong> $600,000 total project funding; $440,000 TTI portion</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Federal Highway Administration, this project develops a decision support toolkit to improve safety in highway work areas. The toolkit helps transportation agencies and construction teams evaluate work zone risks, identify appropriate safety strategies, and support data-informed decisions during planning and field operations.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="Human wearable robot interactions learning environment project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Embodied Learning</div>
+          <h3 class="project-title">Collaborative Research: An Embodied Learning Environment for Advancing Human-Wearable Robot Interactions Skills in Construction Education</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Science Foundation</div>
+            <div><strong>Project Period:</strong> September 2024–August 2027</div>
+            <div><strong>Funding:</strong> $750,000 total project funding; $145,598 Texas A&amp;M portion</div>
+            <div><strong>Role:</strong> Texas A&amp;M PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Science Foundation, this collaborative project develops an immersive learning environment to prepare construction students to interact effectively with wearable robot technologies. It uses virtual reality, embodied learning, and human-wearable robot interaction concepts to improve understanding of ergonomic risk reduction, muscle fatigue prevention, and safe technology adoption.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="ARTBA Team Work Zone Safety Training Grant Program project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Training &amp; Outreach</div>
+          <h3 class="project-title">ARTBA Team Work Zone Safety Training Grant Program</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Federal Highway Administration</div>
+            <div><strong>Project Period:</strong> February 2024–February 2029</div>
+            <div><strong>Funding:</strong> $320,000 project share from a $2,000,000 program</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Federal Highway Administration, this project supports the development and delivery of work zone safety training through the ARTBA Team Work Zone Safety Training Grant Program. The effort advances roadway worker safety through training resources, practical guidance, and outreach for transportation construction professionals.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=70" alt="Reducing adverse driving behaviors in work zones project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Driver Behavior</div>
+          <h3 class="project-title">Reducing Adverse Driving Behaviors in Work Zones: Strategies and Guidelines</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Cooperative Highway Research Program</div>
+            <div><strong>Project Period:</strong> September 2024–September 2027</div>
+            <div><strong>Funding:</strong> $600,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Cooperative Highway Research Program, this project develops strategies and guidelines to reduce unsafe driving behaviors in highway work zones, including speeding, tailgating, distracted driving, aggressive driving, and driver confusion. The work identifies engineering, education, enforcement, and technology-based countermeasures that can improve safety for both workers and motorists.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=70" alt="Work zone intrusion prediction and prevention project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Intrusion Prevention</div>
+          <h3 class="project-title">Guide for Work Zone Intrusion Prediction and Prevention</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Cooperative Highway Research Program, through subcontract from Oregon State University</div>
+            <div><strong>Project Period:</strong> May 2024–November 2026</div>
+            <div><strong>Funding:</strong> $600,000 total project funding; $220,000 Texas A&amp;M/TTI portion</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Supported by the National Cooperative Highway Research Program, this project develops guidance to help transportation agencies predict and prevent vehicle intrusions into highway work zones. The research examines intrusion frequency, contributing factors, crash characteristics, and effective mitigation strategies to support safer work zone planning and decision-making.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=70" alt="REU smart and sustainable construction project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Undergraduate Research</div>
+          <h3 class="project-title">REU Site: Smart and Sustainable Construction in the Digital Era</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Science Foundation</div>
+            <div><strong>Project Period:</strong> September 2023–August 2027</div>
+            <div><strong>Funding:</strong> $402,904</div>
+            <div><strong>Role:</strong> Senior Personnel</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Science Foundation, this REU Site provides undergraduate students with hands-on summer research experiences in smart and sustainable construction. Students work on emerging topics such as virtual reality, robotics, drones, digital twins, smart materials, machine learning, and artificial intelligence while strengthening the STEM research pipeline.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=70" alt="Data sensing and computational thinking project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">STEM Workforce Development</div>
+          <h3 class="project-title">Collaborative Research: Embodied Interactive Environment for Advancing Data Sensing and Computational Thinking Skills in the Built Environment</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Science Foundation</div>
+            <div><strong>Project Period:</strong> May 2023–April 2027</div>
+            <div><strong>Funding:</strong> $1,300,000 total project funding; $667,000 Texas A&amp;M portion</div>
+            <div><strong>Role:</strong> PI; Lead PI for three-university collaborative project</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Science Foundation, this project develops an embodied interactive learning environment to strengthen data sensing and computational thinking skills in the built environment. It uses immersive virtual construction scenarios to help students interpret sensing technologies, translate sensor data into computational rules, and apply data-informed decision-making.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="project-section-head reveal">
+      <h3>Completed Projects</h3>
+      <p>Completed research, training initiatives, and funded studies across construction safety, work zones, robotics, and education.</p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=70" alt="Roadway worker safety training project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Safety Training</div>
+          <h3 class="project-title">Roadway Worker Safety Training</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Department of Labor</div>
+            <div><strong>Project Period:</strong> September 2024–September 2025</div>
+            <div><strong>Funding:</strong> $75,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Supported by the Department of Labor, this project developed and delivered roadway worker safety training to improve hazard recognition and injury prevention in roadway construction and maintenance environments. The training focused on common work zone hazards, safe work practices, and practical strategies to reduce incidents involving traffic, equipment, and jobsite operations.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=70" alt="Zero Accident Techniques project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Safety Best Practices</div>
+          <h3 class="project-title">A Refresh of CII’s Zero Accident Techniques (ZAT)</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Construction Industry Institute</div>
+            <div><strong>Completion Date:</strong> August 2025</div>
+            <div><strong>Funding:</strong> $240,000</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Construction Industry Institute, this project updated CII’s Zero Accident Techniques to reflect current safety practices, industry needs, and emerging approaches to injury prevention. The research identified effective safety practices, assessed implementation patterns, and developed updated guidance for construction companies.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=70" alt="Forecasting absenteeism project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Predictive Analytics</div>
+          <h3 class="project-title">Forecasting Absenteeism in the Electrical Construction Industry Through Predictive Data Analytics</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> ELECTRI International</div>
+            <div><strong>Completion Date:</strong> July 2025</div>
+            <div><strong>Funding:</strong> $50,000</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by ELECTRI International, this project used predictive data analytics to forecast absenteeism trends in the electrical construction industry. The work analyzed workforce and project data to identify contributing factors, support proactive employee engagement strategies, and help contractors improve workforce planning and labor productivity.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=70" alt="Completed TANDEM project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Wearable Assistive Systems</div>
+          <h3 class="project-title">TANDEM: Tensegrity-based Assistive AND Rehabilitation Exosuits to Complement Human BioMechanics</h3>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Science Foundation</div>
+            <div><strong>Completion Date:</strong> December 2024</div>
+            <div><strong>Funding:</strong> $46,000</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Science Foundation, this project supported the development of bio-inspired tensegrity-based exosuits designed to complement human biomechanics during physically demanding tasks. The system focused on reducing muscular effort, improving comfort, and lowering the risk of work-related musculoskeletal injuries.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70" alt="On-site autonomous equipment safety project" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Autonomous Equipment Safety</div>
           <h3 class="project-title">On-site Autonomous Equipment Safety</h3>
-          <p class="project-desc">This project improved safety practices for the use of on-site autonomous equipment in construction environments. The work supported hazard recognition, worker awareness, and safe interaction with autonomous or semi-autonomous equipment on jobsites.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Department of Labor</div>
+            <div><strong>Completion Date:</strong> September 2024</div>
+            <div><strong>Funding:</strong> $75,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Supported by the Department of Labor, this project improved safety practices for the use of on-site autonomous equipment in construction environments. The work advanced hazard recognition, worker awareness, and safe interaction with autonomous or semi-autonomous equipment on jobsites.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="Human exoskeleton systems assessment project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=70" alt="Human exoskeleton systems framework project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">CIAC | PI</div>
+          <div class="project-tag">Exoskeleton Assessment</div>
           <h3 class="project-title">Developing and Testing a Framework to Assess Human-Exoskeleton Systems in Construction</h3>
-          <p class="project-desc">This project developed and tested a framework for assessing human-exoskeleton systems in construction environments. It evaluated worker safety, comfort, usability, physical demand, and task performance to support evidence-based adoption of wearable assistive systems.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Construction Industry Advisory Council</div>
+            <div><strong>Completion Date:</strong> August 2024</div>
+            <div><strong>Funding:</strong> $25,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Construction Industry Advisory Council, this project developed and tested a framework for assessing human-exoskeleton systems in construction environments. The research evaluated worker safety, comfort, usability, physical demand, and task performance to support evidence-based technology adoption.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Warfighter musculoskeletal injury prevention project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&q=70" alt="Warfighter musculoskeletal injury prevention project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Department of Defense | Co-PI</div>
+          <div class="project-tag">Fatigue &amp; Injury Prevention</div>
           <h3 class="project-title">The Prediction and Evaluation of Strength and Fatigue to Prevent Warfighter Musculoskeletal Injuries</h3>
-          <p class="project-desc">This project focused on predicting and evaluating strength and fatigue to help prevent musculoskeletal injuries among warfighters. It supported assessment approaches that identify physical fatigue, injury risk, and performance limitations during demanding operational tasks.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Department of Defense</div>
+            <div><strong>Completion Date:</strong> February 2024</div>
+            <div><strong>Funding:</strong> $300,000 total project funding; $100,000 project share</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the Department of Defense, this project focused on predicting and evaluating strength and fatigue to help prevent musculoskeletal injuries among warfighters. The research supported assessment approaches that identify physical fatigue, injury risk, and performance limitations during demanding operational tasks.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="Intrusion mitigation technologies in utility work zones project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=70" alt="Intrusion mitigation technologies electric utility work zones project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">EPRI | PI</div>
+          <div class="project-tag">Utility Work Zones</div>
           <h3 class="project-title">Investigating the Effectiveness of Intrusion Mitigation Technologies in Electric Utility Work Zones</h3>
-          <p class="project-desc">This project evaluated intrusion mitigation technologies designed to improve worker protection in electric utility work zones along public roadways. It identified high-risk conditions, assessed available alert technologies, and developed recommendations for deployment.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Electric Power Research Institute</div>
+            <div><strong>Completion Date:</strong> December 2023</div>
+            <div><strong>Funding:</strong> $110,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Electric Power Research Institute, this project evaluated intrusion mitigation technologies designed to improve worker protection in electric utility work zones located along public roadways. The research identified high-risk conditions, assessed available alert technologies, and developed practical recommendations for deployment.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="Modular construction safety project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=70" alt="Modular construction safety project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Department of Labor | PI</div>
+          <div class="project-tag">Modular Construction</div>
           <h3 class="project-title">Modular Construction Safety</h3>
-          <p class="project-desc">This project developed safety training resources for modular construction workers and employers. It addressed safety risks across manufacturing, transportation, and installation, with emphasis on hazard recognition and injury prevention.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Department of Labor</div>
+            <div><strong>Completion Date:</strong> September 2023</div>
+            <div><strong>Funding:</strong> $75,000</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Supported by the Department of Labor, this project developed safety training resources for modular construction workers and employers. The training addressed key risks across manufacturing, transportation, and installation, with emphasis on hazard recognition and injury prevention.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Prefabrication instructional project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&q=70" alt="Prefabrication instructional project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">PCI | Co-PI</div>
+          <div class="project-tag">Prefabrication Education</div>
           <h3 class="project-title">The Process of Prefabrication (P2P): An Integrated Instructional Project on Materials, Design, Fabrication, and Erection of Precast/Prestressed Structures</h3>
-          <p class="project-desc">This project developed integrated instructional materials to improve education on the full prefabrication process for precast and prestressed concrete structures. It connected design, fabrication, transportation, and erection processes to strengthen workforce readiness.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Precast/Prestressed Concrete Institute</div>
+            <div><strong>Completion Date:</strong> December 2022</div>
+            <div><strong>Funding:</strong> $100,000</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Precast/Prestressed Concrete Institute, this project developed integrated instructional materials to improve education on the full prefabrication process for precast and prestressed concrete structures. The work connected materials, structural design, fabrication, transportation, and erection to strengthen workforce readiness.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="Exoskeleton and temperature fatigue project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?w=600&q=70" alt="Exoskeleton and temperature fatigue project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Deep South Center | PI</div>
+          <div class="project-tag">Worker Fatigue</div>
           <h3 class="project-title">Effect of Exoskeleton and Temperature Level on Construction Worker Fatigue</h3>
-          <p class="project-desc">This project examined how exoskeleton use and temperature conditions affect construction worker fatigue and physical demand. It evaluated wearable robotic assistance under room and elevated temperature conditions using physiological and biomechanical measures.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Deep South Center for Occupational Health and Safety</div>
+            <div><strong>Completion Date:</strong> August 2022</div>
+            <div><strong>Funding:</strong> $19,973 total project funding; $9,987 project share</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the Deep South Center for Occupational Health and Safety, this project examined how exoskeleton use and temperature conditions affect construction worker fatigue and physical demand. The research evaluated wearable robotic assistance under room and elevated temperature conditions using physiological and biomechanical measures.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70" alt="All-weather fill material performance project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="All-weather fill material project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">Vulcan Materials | Co-PI</div>
+          <div class="project-tag">Construction Materials</div>
           <h3 class="project-title">Assessing the Impact of All-Weather Fill Material on Project Performance</h3>
-          <p class="project-desc">This project assessed how alternative all-weather fill materials can support site productivity, constructability, schedule reliability, and performance under challenging weather or ground conditions in construction and infrastructure projects.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Vulcan Materials Company</div>
+            <div><strong>Completion Date:</strong> August 2022</div>
+            <div><strong>Funding:</strong> $68,700 total project funding; $34,350 project share</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by Vulcan Materials Company, this project assessed the impact of all-weather fill material on construction project performance. The work evaluated how alternative fill materials can support productivity, constructability, schedule reliability, and field performance under challenging weather and ground conditions.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Last-minute work changes safety technologies project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=70" alt="Last-minute work changes technology project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">CII | Co-PI</div>
+          <div class="project-tag">Serious Injury Prevention</div>
           <h3 class="project-title">Technologies to Prevent Serious Injuries and Fatalities Related to Last-Minute Work Changes</h3>
-          <p class="project-desc">This project examined how last-minute work changes contribute to serious injuries and fatalities in construction. It evaluated sensing, monitoring, communication, visualization, automation, and AI-based approaches to improve situational awareness and reduce serious risks.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Construction Industry Institute</div>
+            <div><strong>Completion Date:</strong> August 2022</div>
+            <div><strong>Funding:</strong> $220,000 total project funding; $4,000 project share</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Construction Industry Institute, this project examined how last-minute work changes contribute to serious injuries and fatalities in construction. The research evaluated sensing, monitoring, communication, visualization, site access and control, automation, and artificial intelligence tools to help prevent or mitigate those risks.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600&q=70" alt="Visual literacy hazard recognition project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&q=70" alt="Visual literacy electric utility design hazard recognition project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">EPRI | PI</div>
+          <div class="project-tag">Safety by Design</div>
           <h3 class="project-title">Using Visual Literacy to Improve Hazard Recognition in Electric Utility Designs</h3>
-          <p class="project-desc">This project examined how visual literacy can improve hazard recognition during the design of electric utility assets. It integrated safety-by-design principles with visual literacy techniques to help teams identify and address hazards before construction, operation, or maintenance begins.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Electric Power Research Institute</div>
+            <div><strong>Completion Date:</strong> June 2022</div>
+            <div><strong>Funding:</strong> $19,965</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Electric Power Research Institute, this project examined how visual literacy can improve hazard recognition during the design of electric utility assets. The research integrated safety-by-design principles with visual literacy techniques to help designers and engineers identify and address hazards before construction or maintenance begins.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&q=70" alt="Human robot interaction safety risks project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=70" alt="Human robot interaction safety risks project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">CPWR | PI</div>
+          <div class="project-tag">Human-Robot Interaction</div>
           <h3 class="project-title">Protocol for Assessing Human-Robot Interaction Safety Risks</h3>
-          <p class="project-desc">This project developed a practical protocol for assessing safety risks associated with human-robot interaction in construction. It helped practitioners identify and quantify risks when using wearable robots, remote-operated robots, and onsite automated equipment.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> Center for Construction Research and Training</div>
+            <div><strong>Completion Date:</strong> September 2021</div>
+            <div><strong>Funding:</strong> $29,961</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Sponsored by the Center for Construction Research and Training, this project developed a practical protocol for assessing safety risks associated with human-robot interaction in construction. The work helps practitioners identify and quantify risks when using wearable robots, remote-operated robots, and onsite automated equipment.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=600&q=70" alt="Alternative work zone safety technologies project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=70" alt="Alternative work zone safety technologies project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">NCHRP | Co-PI</div>
+          <div class="project-tag">Work Zone Technology</div>
           <h3 class="project-title">Alternative Technologies for Mitigating the Risk of Injuries and Deaths in Work Zones</h3>
-          <p class="project-desc">This project evaluated alternative technologies for preventing and mitigating vehicle intrusions into highway work zones. It identified successful intrusion technologies, assessed implementation considerations, and developed guidance to support safer roadway construction and maintenance operations.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> National Cooperative Highway Research Program</div>
+            <div><strong>Completion Date:</strong> August 2021</div>
+            <div><strong>Funding:</strong> $75,000 total project funding; $9,530 project share</div>
+            <div><strong>Role:</strong> Co-PI</div>
+          </div>
+          <p class="project-desc">
+            Funded by the National Cooperative Highway Research Program, this project evaluated alternative technologies for preventing and mitigating vehicle intrusions into highway work zones. The research identified successful intrusion technologies, assessed implementation considerations, and developed guidance to help agencies select appropriate safety solutions.
+          </p>
         </div>
       </article>
 
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="IoT construction safety management project" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70" alt="IoT construction safety management project" loading="lazy" />
         </div>
         <div class="project-body">
-          <div class="project-tag">University of Alabama | PI</div>
+          <div class="project-tag">IoT &amp; Safety Management</div>
           <h3 class="project-title">Enhancing the Application of Internet of Things (IoT) in Construction Safety Management</h3>
-          <p class="project-desc">This project explored how Internet of Things technologies can improve construction safety management through connected sensors, wearable devices, and real-time data collection for hazard monitoring, worker safety, and proactive safety decision-making.</p>
+          <div class="project-meta">
+            <div><strong>Sponsor:</strong> The University of Alabama RGC Small Grant</div>
+            <div><strong>Completion Date:</strong> March 2021</div>
+            <div><strong>Funding:</strong> $5,740</div>
+            <div><strong>Role:</strong> PI</div>
+          </div>
+          <p class="project-desc">
+            Supported by The University of Alabama RGC Small Grant, this project explored how Internet of Things technologies can improve construction safety management. The work focused on connected sensors, wearable devices, and real-time data collection to support hazard monitoring, worker safety, and proactive safety decision-making.
+          </p>
         </div>
       </article>
     </div>
   </div>
 </section>
-
-  
 
 <!-- REU PROGRAM -->
 <section id="luminy" class="section" aria-labelledby="reu-heading">
