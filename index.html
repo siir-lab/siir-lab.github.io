@@ -294,12 +294,13 @@
     .vision-points li::before { content: '→'; color: var(--teal); font-weight: 700; margin-top: .05rem; flex-shrink: 0; }
 
     /* IMPACT */
-    .impact-band { background: var(--navy); color: var(--white); padding: 4rem 2rem; text-align: center; }
+    /* IMPACT */
+    .impact-band { background: var(--white); color: var(--text); padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .impact-grid { display: flex; gap: 0; justify-content: center; flex-wrap: wrap; max-width: 900px; margin: 0 auto; }
-    .impact-item { flex: 1 1 180px; padding: 2rem 1rem; border-right: 1px solid rgba(255,255,255,.12); }
+    .impact-item { flex: 1 1 180px; padding: 2rem 1rem; border-right: 1px solid rgba(10,35,66,.12); }
     .impact-item:last-child { border-right: none; }
-    .impact-num { font-family: var(--font-serif); font-size: 3rem; font-weight: 900; color: var(--gold); line-height: 1; }
-    .impact-label { font-size: .85rem; color: rgba(255,255,255,.6); margin-top: .5rem; letter-spacing: .06em; text-transform: uppercase; }
+    .impact-num { font-family: var(--font-serif); font-size: 3rem; font-weight: 900; color: var(--maroon); line-height: 1; }
+    .impact-label { font-size: .85rem; color: var(--muted); margin-top: .5rem; letter-spacing: .06em; text-transform: uppercase; }
 
     /* PROJECTS */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; }
@@ -528,9 +529,9 @@
 <!-- HERO -->
 <section id="hero" aria-label="Hero">
   <div class="hero-inner">
-    <span class="hero-kicker">Safety Innovation Integration Research Lab</span>
+    
     <h1 class="hero-title">Advancing <em>Safety</em><br />Through Research &amp; Innovation</h1>
-    <p class="hero-sub">The SIIR Lab, led by Dr. Chukwuma Nnaji at Texas A&amp;M University, investigates cutting-edge strategies at the intersection of occupational safety, emerging technologies, and systems integration to build safer work environments.</p>
+    <p class="hero-sub">The Safety Innovation Integration Research (SIIR) Lab, led by Dr. Chukwuma Nnaji at Texas A&amp;M University, investigates cutting-edge strategies at the intersection of occupational safety, emerging technologies, and systems integration to build safer work environments.</p>
     <div class="hero-ctas">
       <a href="#vision" class="btn btn-primary">Explore Our Vision</a>
       <a href="#projects" class="btn btn-outline">View Projects</a>
@@ -542,7 +543,7 @@
       <div class="hero-stat"><div class="hero-stat-num">13.2M+</div><div class="hero-stat-label">RESEARCH FUNDING</div></div>
     </div>
   </div>
-  <div class="hero-scroll" aria-hidden="true"><span>Scroll</span><div class="scroll-dot"></div></div>
+  <!--  <div class="hero-scroll" aria-hidden="true"><span>Scroll</span><div class="scroll-dot"></div></div> -->
 </section>
 
 <!-- IMPACT BAND -->
@@ -1260,9 +1261,9 @@
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="jia.jpg" alt="Jia Xu" class="member-img"></div><div class="member-body"><div class="member-name">Jia Xu</div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AIqSsVvNoNa3oOkJxzIQFCsAXTmN1yKYu01uy8XORvSz4WeOn3JyWD_QU83Cl-ApAM6gg-tIlT8sqB8vNNC7uA&user=WOY1TIwAAAAJ" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Jia-Xu-81" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/jia-xu-9b3aa9282/" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="nana.jpg" alt="Nana Kwabena Asamoah Antwi" class="member-img"></div><div class="member-body"><div class="member-name">Nana Kwabena Asamoah Antwi (Co-advised by Dr. gilles albeaino) </div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Nighttime Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?user=P94qEXEAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Nana-Kwabena-Asamoah-Antwi?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/nana-antwi73071/" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="nana.jpg" alt="Nana Kwabena Asamoah Antwi" class="member-img"></div><div class="member-body"><div class="member-name">Nana Kwabena Asamoah Antwi (Co-advised by Dr. Gilles Albeaino) </div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Nighttime Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?user=P94qEXEAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Nana-Kwabena-Asamoah-Antwi?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/nana-antwi73071/" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="Fahim.jpg" alt="Md Fahim Hasan Rezve" class="member-img"></div><div class="member-body"><div class="member-name">Md Fahim Hasan Rezve (Co-advised by Dr.Yewande Abraham) </div><div class="member-role">PhD Student</div><div class="member-interest">VR based computational thinking in construction, VR based construction safety education</div><div class="member-links"><a href="https://scholar.google.com/citations?user=UFTrbIEAAAAJ&hl=en#d=gs_hdr_drw&t=1779811616946" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Fahim-Hasan-Rezve" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/fahimhasanrezve/" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="Fahim.jpg" alt="Md Fahim Hasan Rezve" class="member-img"></div><div class="member-body"><div class="member-name">Md Fahim Hasan Rezve (Co-advised by Dr. Yewande Abraham) </div><div class="member-role">PhD Student</div><div class="member-interest">VR based computational thinking in construction, VR based construction safety education</div><div class="member-links"><a href="https://scholar.google.com/citations?user=UFTrbIEAAAAJ&hl=en#d=gs_hdr_drw&t=1779811616946" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Fahim-Hasan-Rezve" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/fahimhasanrezve/" target="_blank">LinkedIn</a></div></div></div>
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="naem.jpeg" alt="Md Nayeem Hoque" class="member-img"></div><div class="member-body"><div class="member-name">Md Nayeem Hoque</div><div class="member-role">Phd Student</div><div class="member-interest">Work Zone Safety, Crash Analysis, and Decision Support Systems</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=md-nayeem-hoque" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Nayeem-Hoque" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/md-nayeem-hoque" target="_blank">LinkedIn</a></div></div></div>
 
