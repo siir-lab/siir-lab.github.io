@@ -142,13 +142,13 @@
 
 .hero-title {
   font-size: clamp(2.4rem, 6vw, 4.5rem);
-  color: var(--navy);
+  color: #111111;
   font-weight: 900;
   animation: fadeUp .9s .1s both;
 }
 
 .hero-title em {
-  color: var(--gold);
+  color: var(--maroon);
   font-style: normal;
 }
 
@@ -271,7 +271,23 @@
     /* VISION */
     .vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
     .vision-img-wrap { position: relative; border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
-    .vision-img-wrap img { width: 100%; height: 420px; object-fit: cover; }
+    .vision-img-wrap {
+        position: relative;
+        border-radius: var(--r);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+     .vision-img-wrap img {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+      }
     .vision-img-badge { position: absolute; bottom: 1.5rem; left: 1.5rem; background: var(--gold); color: var(--navy); font-weight: 700; font-size: .85rem; padding: .5rem 1.2rem; border-radius: 100px; }
     .vision-points { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem; }
     .vision-points li { display: flex; gap: .75rem; align-items: flex-start; font-size: .95rem; color: var(--muted); }
@@ -1244,19 +1260,19 @@
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="jia.jpg" alt="Jia Xu" class="member-img"></div><div class="member-body"><div class="member-name">Jia Xu</div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AIqSsVvNoNa3oOkJxzIQFCsAXTmN1yKYu01uy8XORvSz4WeOn3JyWD_QU83Cl-ApAM6gg-tIlT8sqB8vNNC7uA&user=WOY1TIwAAAAJ" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Jia-Xu-81" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/jia-xu-9b3aa9282/" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="nana.jpg" alt="Nana Kwabena Asamoah Antwi" class="member-img"></div><div class="member-body"><div class="member-name">Nana Kwabena Asamoah Antwi</div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Nighttime Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?user=P94qEXEAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Nana-Kwabena-Asamoah-Antwi?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/nana-antwi73071/" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="nana.jpg" alt="Nana Kwabena Asamoah Antwi" class="member-img"></div><div class="member-body"><div class="member-name">Nana Kwabena Asamoah Antwi (Co-advised by Dr. gilles albeaino) </div><div class="member-role">PhD Student</div><div class="member-interest">Human-robot Collaboration in Construction, Nighttime Construction Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?user=P94qEXEAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Nana-Kwabena-Asamoah-Antwi?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/nana-antwi73071/" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="Fahim.jpg" alt="Md Fahim Hasan Rezve" class="member-img"></div><div class="member-body"><div class="member-name">Md Fahim Hasan Rezve</div><div class="member-role">PhD Student</div><div class="member-interest">VR based computational thinking in construction, VR based construction safety education</div><div class="member-links"><a href="https://scholar.google.com/citations?user=UFTrbIEAAAAJ&hl=en#d=gs_hdr_drw&t=1779811616946" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Fahim-Hasan-Rezve" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/fahimhasanrezve/" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="Fahim.jpg" alt="Md Fahim Hasan Rezve" class="member-img"></div><div class="member-body"><div class="member-name">Md Fahim Hasan Rezve (Co-advised by Dr.Yewande Abraham) </div><div class="member-role">PhD Student</div><div class="member-interest">VR based computational thinking in construction, VR based construction safety education</div><div class="member-links"><a href="https://scholar.google.com/citations?user=UFTrbIEAAAAJ&hl=en#d=gs_hdr_drw&t=1779811616946" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Fahim-Hasan-Rezve" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/fahimhasanrezve/" target="_blank">LinkedIn</a></div></div></div>
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="naem.jpeg" alt="Md Nayeem Hoque" class="member-img"></div><div class="member-body"><div class="member-name">Md Nayeem Hoque</div><div class="member-role">Phd Student</div><div class="member-interest">Work Zone Safety, Crash Analysis, and Decision Support Systems</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=md-nayeem-hoque" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Md-Nayeem-Hoque" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/md-nayeem-hoque" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="sam.jpeg" alt="Samuel Olatunbosun" class="member-img"></div><div class="member-body"><div class="member-name">Samuel Olatunbosun</div><div class="member-role">PhD Student</div><div class="member-interest">Safety in Human-robot Collaboration in Construction</div><div class="member-links"><a href="https://scholar.google.com/citations?user=AY8lm_MAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Samuel-Olatunbosun-4?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/samuel5070" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="sam.jpeg" alt="Samuel Olatunbosun" class="member-img"></div><div class="member-body"><div class="member-name">Samuel Olatunbosun (Co-advised by Dr. Xi Wang)</div><div class="member-role">PhD Student</div><div class="member-interest">Safety in Human-robot Collaboration in Construction</div><div class="member-links"><a href="https://scholar.google.com/citations?user=AY8lm_MAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Samuel-Olatunbosun-4?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/samuel5070" target="_blank">LinkedIn</a></div></div></div>
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Muhammad.png" alt="Muhammad Khan" class="member-img"></div><div class="member-body"><div class="member-name">Muhammad Khan</div><div class="member-role">PhD Candidate</div><div class="member-interest">Research focuses on Wearable Robotics & Human-Robot Interaction, Fatigue, Heat Stress & Biomechanics, AI, Digital Twins & Immersive Training, Work Zone, Highway & Extraterrestrial Safety \</div><div class="member-links"><a href="https://scholar.google.com/citations?user=mn9GGigAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Muhammad-Khan-811" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/muhammad-khan-525862126/" target="_blank">LinkedIn</a></div></div></div>
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="prosper.jfif" alt="Prosper Gbiengu" class="member-img"></div><div class="member-body"><div class="member-name">Prosper Gbiengu</div><div class="member-role">PhD Student</div><div class="member-interest">Construction safety, Workforce sustainability, Human factor research</div><div class="member-links"><a href="https://scholar.google.com/scholar_settings?hl=en#1=&d=gs_hdr_drw&t=1780328791350" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Prosper-Gbiengu?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></div></div></div>
 
-      <div class="member-card reveal"><div class="member-img-wrap"><img src="hebanew.jpg" alt="Heba ALKailani" class="member-img"></div><div class="member-body"><div class="member-name">Heba ALKailani</div><div class="member-role">PhD Student</div><div class="member-interest">Highway Infrastructure Safety, Work Zone Safety, and Construction Workforce development</div><div class="member-links"><a href="https://scholar.google.com/citations?user=dIE4mJ8AAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Heba-Alkailani-2" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/heba-alkailani-b94009265" target="_blank">LinkedIn</a></div></div></div>
+      <div class="member-card reveal"><div class="member-img-wrap"><img src="hebanew.jpg" alt="Heba ALKailani" class="member-img"></div><div class="member-body"><div class="member-name">Heba ALKailani (Co-advised by Dr. Minerva Bonilla)</div><div class="member-role">PhD Student</div><div class="member-interest">Highway Infrastructure Safety, Work Zone Safety, and Construction Workforce development</div><div class="member-links"><a href="https://scholar.google.com/citations?user=dIE4mJ8AAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Heba-Alkailani-2" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/heba-alkailani-b94009265" target="_blank">LinkedIn</a></div></div></div>
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Talha.png" alt="Muhammad Talha Nadeem" class="member-img"></div><div class="member-body"><div class="member-name">Muhammad Talha Nadeem</div><div class="member-role">Master Student</div><div class="member-interest">Drone Workers' Safety, Construction Workers Hazard Recognition Ability</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=3uL8MjIAAAAJ&view_op=list_works&gmla=AIqSsVucigvPVmjWMXtU32ekJ3Vq2zwsq7T3DcMOHmqWeznkx0VBWI-jXIMlQDpoihMvWJ_1DlwpPcmku5wFPw12" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Muhammad-Talha-Nadeem" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/talhanadeem43/" target="_blank">LinkedIn</a></div></div></div>
 
