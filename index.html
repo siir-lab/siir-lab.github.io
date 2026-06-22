@@ -65,6 +65,8 @@
       --navy:   #0a2342;
       --teal:   #0e6ba8;
       --gold:   #c8972b;
+      --maroon: #500000;
+      --maroon-dark: #3c001c;
       --cream:  #f5f2ec;
       --white:  #ffffff;
       --text:   #1a1a2e;
@@ -98,27 +100,164 @@
     .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: .3s; }
 
     /* HERO */
-    #hero { padding-top: var(--nav-h); min-height: 100vh; display: grid; place-items: center; background: linear-gradient(135deg, var(--navy) 0%, #0d3460 55%, #16213e 100%); position: relative; overflow: hidden; }
-    #hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 80% 20%, rgba(200,151,43,.18) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 10% 80%, rgba(14,107,168,.35) 0%, transparent 60%); }
-    #hero::after { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,.03) 39px, rgba(255,255,255,.03) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,.03) 39px, rgba(255,255,255,.03) 40px); }
-    .hero-inner { position: relative; z-index: 2; max-width: 900px; padding: 4rem 2rem; text-align: center; }
-    .hero-kicker { display: inline-block; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 600; border: 1px solid rgba(200,151,43,.4); padding: .35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; animation: fadeUp .8s both; }
-    .hero-title { font-size: clamp(2.4rem, 6vw, 4.5rem); color: var(--white); font-weight: 900; animation: fadeUp .9s .1s both; }
-    .hero-title em { color: var(--gold); font-style: normal; }
-    .hero-sub { margin: 1.5rem auto 0; font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,.75); max-width: 620px; animation: fadeUp 1s .2s both; }
-    .hero-ctas { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeUp 1s .3s both; }
-    .btn { display: inline-block; padding: .75rem 2rem; font-size: .9rem; font-weight: 600; border-radius: 100px; cursor: pointer; transition: transform .2s, box-shadow .2s; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
-    .btn-primary { background: var(--gold); color: var(--navy); }
-    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.5); }
-    .btn-outline:hover { border-color: var(--white); }
-    .hero-stats { margin-top: 4rem; display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; animation: fadeUp 1s .4s both; }
-    .hero-stat { text-align: center; }
-    .hero-stat-num { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 900; color: var(--gold); line-height: 1; }
-    .hero-stat-label { font-size: .8rem; color: rgba(255,255,255,.6); letter-spacing: .08em; text-transform: uppercase; margin-top: .25rem; }
-    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: .5rem; }
-    .hero-scroll span { font-size: .7rem; color: rgba(255,255,255,.4); letter-spacing: .12em; text-transform: uppercase; }
-    .scroll-dot { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,.4), transparent); animation: scrollPulse 2s infinite; }
+    /* HERO */
+#hero {
+  padding-top: var(--nav-h);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+#hero::before,
+#hero::after {
+  content: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-kicker {
+  display: inline-block;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 600;
+  border: 1px solid rgba(14,107,168,.22);
+  padding: .35rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  animation: fadeUp .8s both;
+  background: rgba(14,107,168,.04);
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  color: var(--navy);
+  font-weight: 900;
+  animation: fadeUp .9s .1s both;
+}
+
+.hero-title em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.hero-sub {
+  margin: 1.5rem auto 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--muted);
+  max-width: 620px;
+  animation: fadeUp 1s .2s both;
+}
+
+.hero-ctas {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s .3s both;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 2rem;
+  font-size: .9rem;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s, background .2s, color .2s, border-color .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(80,0,0,.12);
+}
+
+.btn-primary {
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--maroon-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--maroon);
+  border: 2px solid rgba(80,0,0,.18);
+}
+
+.btn-outline:hover {
+  border-color: var(--maroon);
+  background: rgba(80,0,0,.04);
+}
+
+.hero-stats {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s .4s both;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: .8rem;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-top: .25rem;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.hero-scroll span {
+  font-size: .7rem;
+  color: rgba(10,35,66,.4);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.scroll-dot {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(10,35,66,.35), transparent);
+  animation: scrollPulse 2s infinite;
+}
 
     /* SECTION SHELL */
     .section { padding: 6rem 2rem; }
@@ -405,7 +544,7 @@
   <div class="container">
     <div class="vision-grid reveal">
       <div class="vision-img-wrap">
-        <img src="overall2.png" alt="SIIR Lab research environment at Texas A&M University" loading="lazy" />
+        <img src="overall3.png" alt="SIIR Lab research environment at Texas A&M University" loading="lazy" />
         
       </div>
       <div>
@@ -1066,7 +1205,7 @@
     </div>
 
     <div style="margin-top:2.5rem; text-align:center;">
-      <a href="#contact" class="btn btn-primary">Interested in REU? Contact Us →</a>
+      <a href="#contact" class="btn btn-primary">Interested in REU? Contact Us</a>
     </div>
   </div>
 </section>
@@ -1298,7 +1437,7 @@
             </select>
           </div>
           <div class="form-group"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" placeholder="Tell us about your interest…" required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message →</button>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
           <p id="form-status" style="font-size:.85rem; color:var(--teal); display:none; margin-top:.5rem;">✓ Thank you! We'll be in touch shortly.</p>
         </form>
       </div>
