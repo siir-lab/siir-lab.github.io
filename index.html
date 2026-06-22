@@ -375,6 +375,19 @@
 .projects-grid + .project-section-head {
   margin-top: 4rem;
 }
+
+/* FUNDERS & COLLABORATORS */
+.logo-strip { padding: 2.5rem 0 3rem; background: var(--white); overflow: hidden; }
+.logo-marquee { position: relative; overflow: hidden; width: 100%; }
+.logo-track { display: flex; align-items: center; gap: 3.5rem; width: max-content; animation: logoScroll 32s linear infinite; }
+.logo-marquee:hover .logo-track { animation-play-state: paused; }
+.logo-item { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 140px; }
+.logo-item img { height: 56px; width: auto; max-width: 150px; object-fit: contain; opacity: .9; filter: grayscale(100%); transition: opacity .25s ease, filter .25s ease, transform .25s ease; }
+.logo-item img:hover { opacity: 1; filter: grayscale(0%); transform: translateY(-2px); }
+@keyframes logoScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+
+    
     /* ── REU SLIDER ── */
     .reu-slider { position: relative; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem; }
     .reu-slide { display: none; }
@@ -554,6 +567,50 @@
   </div>
 </div>
 
+
+<!-- FUNDERS & COLLABORATORS -->
+<section class="logo-strip" aria-label="Funders and collaborators">
+  <div class="container">
+    <p class="section-tag" style="text-align:center; margin-bottom:1rem;">Funders & Collaborators</p>
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <div class="logo-item"><img src="tti.png" alt="TTI" loading="lazy" /></div>
+        <div class="logo-item"><img src="nsf.png" alt="National Science Foundation" loading="lazy" /></div>
+        <div class="logo-item"><img src="CIAC.png" alt="CIAC" loading="lazy" /></div>
+        <div class="logo-item"><img src="DOT.png" alt="Department of Transportation" loading="lazy" /></div>
+        <div class="logo-item"><img src="alabama.jpg" alt="The University of Alabama" loading="lazy" /></div>
+        <div class="logo-item"><img src="vtech.png" alt="Virginia Tech" loading="lazy" /></div>
+        <div class="logo-item"><img src="DOD.png" alt="Department of Defense" loading="lazy" /></div>
+        <div class="logo-item"><img src="NCHRP.png" alt="National Cooperative Highway Research Program" loading="lazy" /></div>
+        <div class="logo-item"><img src="oregon.png" alt="University of Oregon" loading="lazy" /></div>
+        <div class="logo-item"><img src="DOL.png" alt="Department of Labor" loading="lazy" /></div>
+        <div class="logo-item"><img src="ZAT.png" alt="Construction Indusry Insitute" loading="lazy" /></div>
+        <div class="logo-item"><img src="Fatigue.jpg" alt="Department of Defebce" loading="lazy" /></div>
+        <div class="logo-item"><img src="Data Analytics.png" alt="ELECTRI International" loading="lazy" /></div>
+
+        <div class="logo-item"><img src="tti.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="nsf.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="CIAC.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="DOT.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="alabama.jpg" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="vtech.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="DOD.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="NCHRP.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="oregon.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="DOL.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="ZAT.png" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="Fatigue.jpg" alt="" loading="lazy" aria-hidden="true" /></div>
+        <div class="logo-item"><img src="Data Analytics.png" alt="" loading="lazy" aria-hidden="true" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  
 <!-- VISION -->
 <section id="vision" class="section" aria-labelledby="vision-heading">
   <div class="container">
