@@ -389,29 +389,29 @@
 
     
     /* ── REU SLIDER ── */
-    .reu-slider { position: relative; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem; }
-    .reu-slide { display: none; }
-    .reu-slide.active { display: block; }
-    .reu-slide-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
-    .reu-slide-img { position: relative; overflow: hidden; background: linear-gradient(135deg, #0a2342, #0d3460); min-height: 340px; }
-    .reu-slide-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
-    .reu-slide-img.img-fallback { display: flex; align-items: center; justify-content: center; }
-    .reu-slide-img.img-fallback::after { content: '📸'; font-size: 4rem; opacity: .3; }
-    .reu-slide-badge { position: absolute; top: 1rem; left: 1rem; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 100px; }
-    .reu-slide-content { padding: 2.5rem 2.5rem 2rem; display: flex; flex-direction: column; justify-content: center; }
-    .reu-year-tag { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--teal); margin-bottom: .6rem; }
-    .reu-slide-title { font-family: var(--font-serif); font-size: 1.5rem; color: var(--navy); margin-bottom: 1rem; line-height: 1.25; }
-    .reu-slide-text { font-size: .92rem; color: var(--muted); line-height: 1.7; margin-bottom: .75rem; }
-    .reu-badge-row { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.25rem; }
-    .reu-pair-list { list-style: none; display: flex; flex-direction: column; gap: .85rem; margin-top: .75rem; }
-    .reu-pair-list li { display: flex; align-items: flex-start; gap: .75rem; font-size: .92rem; color: var(--text); }
-    .reu-pair-icon { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
-    .reu-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1.25rem; background: var(--cream); border-top: 1px solid var(--border); }
-    .reu-btn { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; color: var(--navy); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s; }
-    .reu-btn:hover { background: var(--navy); color: var(--white); }
-    .reu-dots { display: flex; gap: .5rem; }
-    .reu-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; cursor: pointer; transition: background .2s; padding: 0; }
-    .reu-dot.active { background: var(--navy); }
+.reu-slider { position: relative; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem; }
+.reu-slide { display: none; }
+.reu-slide.active { display: block; }
+.reu-slide-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
+.reu-slide-img { position: relative; overflow: hidden; background: #ffffff; min-height: 340px; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.reu-slide-img img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+.reu-slide-img.img-fallback { display: flex; align-items: center; justify-content: center; }
+.reu-slide-img.img-fallback::after { content: '📸'; font-size: 4rem; opacity: .3; }
+.reu-slide-badge { position: absolute; top: 1rem; left: 1rem; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 100px; }
+.reu-slide-content { padding: 2.5rem 2.5rem 2rem; display: flex; flex-direction: column; justify-content: center; }
+.reu-year-tag { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--teal); margin-bottom: .6rem; }
+.reu-slide-title { font-family: var(--font-serif); font-size: 1.5rem; color: var(--navy); margin-bottom: 1rem; line-height: 1.25; }
+.reu-slide-text { font-size: .92rem; color: var(--muted); line-height: 1.7; margin-bottom: .75rem; }
+.reu-badge-row { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.reu-pair-list { list-style: none; display: flex; flex-direction: column; gap: .85rem; margin-top: .75rem; }
+.reu-pair-list li { display: flex; align-items: flex-start; gap: .75rem; font-size: .92rem; color: var(--text); }
+.reu-pair-icon { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
+.reu-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1.25rem; background: var(--cream); border-top: 1px solid var(--border); }
+.reu-btn { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; color: var(--navy); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s; }
+.reu-btn:hover { background: var(--navy); color: var(--white); }
+.reu-dots { display: flex; gap: .5rem; }
+.reu-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--navy); background: transparent; cursor: pointer; transition: background .2s; padding: 0; }
+.reu-dot.active { background: var(--navy); }
 
     /* BADGES */
     .badge { font-size: .75rem; font-weight: 600; letter-spacing: .06em; padding: .35rem .9rem; border-radius: 100px; text-transform: uppercase; }
@@ -1307,13 +1307,15 @@
     </div>
 
     <h3 class="section-title reveal" style="font-size:1.5rem; margin-bottom:1.5rem;">Research Team</h3>
+    <h2 class="group-title">Post-Doctoral Researcher</h2>
     <div class="members-grid">
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Rahathnew.jpg" alt="Rahat Hussain" class="member-img"></div><div class="member-body"><div class="member-name">Rahat Hussain, Ph.D.</div><div class="member-role">Post Doctorate</div><div class="member-interest">Construction Safety, Training and Education, STEM, AI-Enhanced Content delivery, HRI</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=fq3qj5QAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Rahat-Hussain-4?ev=hdr_xprf" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/rahat4hussain/" target="_blank">LinkedIn</a></div></div></div>
 
 </div>
 
-<div class="members-grid">
+ <h2 class="group-title">PhD Students</h2>
+    <div class="members-grid">
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Muhammad.png" alt="Muhammad Khan" class="member-img"></div><div class="member-body"><div class="member-name">Muhammad Khan</div><div class="member-role">PhD Candidate</div><div class="member-interest">Research focuses on Wearable Robotics & Human-Robot Interaction, Fatigue, Heat Stress & Biomechanics, AI, Digital Twins & Immersive Training, Work Zone, Highway & Extraterrestrial Safety \</div><div class="member-links"><a href="https://scholar.google.com/citations?user=mn9GGigAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Muhammad-Khan-811" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/muhammad-khan-525862126/" target="_blank">LinkedIn</a></div></div></div>
 
@@ -1334,7 +1336,7 @@
       <div class="member-card reveal"><div class="member-img-wrap"><img src="hebanew.jpg" alt="Heba ALKailani" class="member-img"></div><div class="member-body"><div class="member-name">Heba ALKailani (Co-advised by Dr. Minerva Bonilla)</div><div class="member-role">PhD Student</div><div class="member-interest">Highway Infrastructure Safety, Work Zone Safety, and Construction Workforce development</div><div class="member-links"><a href="https://scholar.google.com/citations?user=dIE4mJ8AAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Heba-Alkailani-2" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/heba-alkailani-b94009265" target="_blank">LinkedIn</a></div></div></div>
 
 </div>
-
+<h2 class="group-title">Masters Students</h2>
 <div class="members-grid">
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Talha.png" alt="Muhammad Talha Nadeem" class="member-img"></div><div class="member-body"><div class="member-name">Muhammad Talha Nadeem</div><div class="member-role">Master Student</div><div class="member-interest">Drone Workers' Safety, Construction Workers Hazard Recognition Ability</div><div class="member-links"><a href="https://scholar.google.com/citations?hl=en&user=3uL8MjIAAAAJ&view_op=list_works&gmla=AIqSsVucigvPVmjWMXtU32ekJ3Vq2zwsq7T3DcMOHmqWeznkx0VBWI-jXIMlQDpoihMvWJ_1DlwpPcmku5wFPw12" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Muhammad-Talha-Nadeem" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/talhanadeem43/" target="_blank">LinkedIn</a></div></div></div>
@@ -1344,7 +1346,7 @@
       <div class="member-card reveal"><div class="member-img-wrap"><img src="ibrahim.png" alt="K. B. M. Ibrahim" class="member-img"></div><div class="member-body"><div class="member-name">K. B. M. Ibrahim</div><div class="member-role">Master Student</div><div class="member-interest">Traffic Safety, Crash Data Analysis, Work Zone Safety</div><div class="member-links"><a href="https://scholar.google.com/citations?user=DUQ2UjwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> · <a href="https://www.researchgate.net/profile/K-B-M-Ibrahim-2" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/kbmibrahim/" target="_blank">LinkedIn</a></div></div></div>
 
 </div>
-
+<h2 class="group-title">Undergraduate Students</h2>
 <div class="members-grid">
 
       <div class="member-card reveal"><div class="member-img-wrap"><img src="Arnia.jpg" alt="Arnia Good" class="member-img"></div><div class="member-body"><div class="member-name">Arnia Goode</div><div class="member-role">REU Student</div><div class="member-interest">Machine learning for real-time fatigue monitoring on edge devices.</div><div class="member-links"><a href="https://www.linkedin.com/in/arniagoode/" target="_blank">LinkedIn</a></div></div></div>
